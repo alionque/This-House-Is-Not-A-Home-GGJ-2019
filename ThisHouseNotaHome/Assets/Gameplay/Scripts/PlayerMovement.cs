@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     [SerializeField]
-    private readonly float maxVel, inputDeadZone = .3f;
+    private float maxVel, inputDeadZone = .3f;
     [SerializeField]
-    private readonly string horizontalInput, verticalInput;
+    private string horizontalInput, verticalInput;
+    [SerializeField]
+    private Rigidbody2D rb;
 
-    private readonly Rigidbody2D rb;
     private Vector2 dir = new Vector2();
 
     // Start is called before the first frame update
@@ -20,9 +21,9 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void Move() {
-        if (Mathf.Abs(dir.x) > .3f || Mathf.Abs(dir.y) > .3f) {
-            dir.x = Input.GetAxis(horizontalInput);
-            dir.y = Input.GetAxis(verticalInput);
+        dir.x = Input.GetAxis(horizontalInput);
+        dir.y = Input.GetAxis(verticalInput);
+        if (Mathf.Abs(dir.x) > inputDeadZone || Mathf.Abs(dir.y) > inputDeadZone) {
             rb.velocity = dir * maxVel;
 
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
