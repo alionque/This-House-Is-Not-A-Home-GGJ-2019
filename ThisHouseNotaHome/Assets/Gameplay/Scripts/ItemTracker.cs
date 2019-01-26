@@ -5,6 +5,9 @@ using UnityEngine;
 public class ItemTracker : MonoBehaviour {
     public static ItemTracker instance;
 
+    [SerializeField]
+    private AudioSource audioSource;
+
     private ArrayList foundItems = new ArrayList();
 
     // Start is called before the first frame update
@@ -16,8 +19,10 @@ public class ItemTracker : MonoBehaviour {
         instance = this;
     }
 
-    public void FoundItem(int itemId) {
-        foundItems.Add(itemId);
+    public void FoundItem(Collectible collectible) {
+        foundItems.Add(collectible.itemId);
+        audioSource.PlayOneShot(collectible.collectionSound);
+        Destroy(collectible.gameObject);
     }
 
     public ArrayList GetFoundItems() {
