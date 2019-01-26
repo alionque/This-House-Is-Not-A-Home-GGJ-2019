@@ -24,5 +24,9 @@ public class PlayerMovement : MonoBehaviour {
         dir.y = Input.GetAxis(verticalInput);
         rb.velocity = dir * maxVel;
     }
+
+    public Vector2 GetDirection() {
+        return dir;
+    }
 }
 
