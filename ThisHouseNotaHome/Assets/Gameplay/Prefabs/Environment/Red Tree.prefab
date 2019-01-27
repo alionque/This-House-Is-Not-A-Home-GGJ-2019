@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 938896684340400161}
   - component: {fileID: 47852222371716721}
   m_Layer: 0
-  m_Name: Red Bush
-  m_TagString: Untagged
+  m_Name: Red Tree
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
