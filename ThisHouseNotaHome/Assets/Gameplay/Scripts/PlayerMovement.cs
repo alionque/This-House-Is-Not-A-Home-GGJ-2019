@@ -28,8 +28,11 @@ public class PlayerMovement : MonoBehaviour {
 
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle + 90f, Vector3.forward);
+
+			GetComponent<Animator> ().SetBool ("Moving", true);
         } else {
             rb.velocity = Vector2.zero;
+			GetComponent<Animator> ().SetBool ("Moving", false);
         }
     }
 

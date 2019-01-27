@@ -7377,6 +7377,7 @@ GameObject:
   - component: {fileID: 577436385}
   - component: {fileID: 577436387}
   - component: {fileID: 577436388}
+  - component: {fileID: 577436389}
   m_Layer: 0
   m_Name: Man-Spritesheet_3
   m_TagString: Untagged
@@ -7514,6 +7515,25 @@ CircleCollider2D:
   m_Offset: {x: 0.045094013, y: -0.27056277}
   serializedVersion: 2
   m_Radius: 0.92
+--- !u!95 &577436389
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577436382}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ae8387c53f703344a7ffaf7c805a5f1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &582896809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10167,10 +10187,10 @@ Transform:
   - {fileID: 1778107255}
   - {fileID: 1331714121}
   - {fileID: 1308964092}
-  - {fileID: 558862397}
   - {fileID: 337296113}
-  - {fileID: 415126822}
   - {fileID: 1521743479}
+  - {fileID: 558862397}
+  - {fileID: 415126822}
   - {fileID: 103375212}
   - {fileID: 2093441850}
   - {fileID: 728253584}
