@@ -11,6 +11,11 @@ public class GameController : MonoBehaviour {
     private string gameOverSceneName;
     [SerializeField]
     private Text timerText;
+	[SerializeField]
+	private AudioSource audioSource;
+	public AudioClip timeRunningOut;
+	private bool timeSongNotPlayed = true;
+
 
     public float timer = 120f;
 
@@ -26,11 +31,17 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         timer -= Time.deltaTime;
+
         if (timer <= 0f) {
             SceneManager.LoadScene(gameOverSceneName);
         } else {
             UpdateTimerUI();
         }
+
+		if (timer <= 16f && timeSongNotPlayed == true) {
+			audioSource.PlayOneShot (timeRunningOut);
+			timeSongNotPlayed = false;
+		}
     }
 
     private void UpdateTimerUI() {
