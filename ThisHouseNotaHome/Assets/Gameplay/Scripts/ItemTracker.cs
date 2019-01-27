@@ -22,6 +22,7 @@ public class ItemTracker : MonoBehaviour {
 
     public void FoundItem(Collectible collectible) {
         foundItems.Add(collectible.itemId);
+        audioSource.Stop();
         audioSource.PlayOneShot(collectible.collectionSound);
         Destroy(collectible.gameObject);
     }
