@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour {
     [SerializeField]
-    private readonly string interactionInput;
+    private string interactionInput;
     [SerializeField]
-    private readonly PlayerMovement playerMovementComponent;
+    private PlayerMovement playerMovementComponent;
     [SerializeField]
-    private readonly float interactionDistance;
+    private float interactionDistance;
 
     // Start is called before the first frame update
-    void Start() {
-
-    }
+    void Start() {}
 
     // Update is called once per frame
     void Update() {
         if (Input.GetButtonDown(interactionInput)) {
-
+            interact();
         }
     }
 
