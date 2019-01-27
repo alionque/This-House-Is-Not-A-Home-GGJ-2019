@@ -8,7 +8,7 @@ public class ItemTracker : MonoBehaviour {
     [SerializeField]
     private AudioSource audioSource;
 
-    private ArrayList foundItems = new ArrayList();
+    private List<int> foundItems = new List<int>();
 
     // Start is called before the first frame update
     void Start() {
@@ -26,7 +26,7 @@ public class ItemTracker : MonoBehaviour {
         Destroy(collectible.gameObject);
     }
 
-    public ArrayList GetFoundItems() {
+    public List<int> GetFoundItems() {
         return foundItems;
     }
 }
