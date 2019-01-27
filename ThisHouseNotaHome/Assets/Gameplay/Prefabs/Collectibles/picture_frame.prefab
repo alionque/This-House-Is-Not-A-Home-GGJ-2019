@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5047507811739624439}
   - component: {fileID: 1045282201417474776}
   - component: {fileID: 7305546465220912333}
+  - component: {fileID: 6450107216744477693}
   m_Layer: 0
   m_Name: picture_frame
   m_TagString: Untagged
@@ -94,3 +95,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   collectionSound: {fileID: 8300000, guid: 94fcd7f8870853d4b8efdd53b86751c8, type: 3}
+--- !u!61 &6450107216744477693
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945423328370097594}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.062728524}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 1.024543}
+  m_EdgeRadius: 0

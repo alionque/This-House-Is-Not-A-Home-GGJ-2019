@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1439862672445240457}
   - component: {fileID: 5393331833775287927}
   m_Layer: 0
-  m_Name: Orange Bush Variant
-  m_TagString: Untagged
+  m_Name: Orange Bush
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
